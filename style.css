@@ -1,0 +1,234 @@
+:root {
+  --color-fondo: rgb(231, 231, 231);
+  --color-secundario: rgb(152, 199, 238);
+  --color-terciario: rgb(209, 209, 209);
+}
+@font-face {
+  font-family: ubuntu;
+  src: url(./items/Ubuntu/Ubuntu-Regular.ttf);
+}
+@font-face {
+  font-family: ubuntu-medium;
+  src: url(./items/Ubuntu/Ubuntu-Medium.ttf);
+}
+body {
+  background-color: var(--color-fondo);
+  margin: 0%;
+}
+header {
+  margin: 20px 40px;
+}
+header > nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+nav > img {
+  max-width: 200px;
+  max-height: 70px;
+  margin: 10px;
+}
+nav > ul {
+  display: flex;
+  font-family: ubuntu;
+  max-width: 400px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  gap: 25px;
+  margin: 10px;
+}
+span {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+span > img {
+  width: 30px;
+}
+
+@media (max-width: 690px) {
+  nav > ul {
+    visibility: hidden;
+  }
+  header > nav {
+    justify-content: center;
+  }
+  header > span {
+    visibility: visible;
+  }
+}
+@media (min-width: 690px) {
+  header > span {
+    visibility: hidden;
+  }
+}
+.seccion1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+.texto_s1 {
+  font-family: ubuntu;
+  width: 350px;
+  text-align: center;
+}
+.texto_s1 > h1 {
+  font-size: 40px;
+}
+.texto_s1 > h2 {
+  font-size: 20px;
+}
+.texto_s1 > button {
+  background-color: var(--color-secundario);
+  color: white;
+  padding: 10px 20px;
+  border-style: none;
+  border-radius: 60px;
+}
+.imagen_s1 {
+  display: flex;
+  max-width: 40%;
+  min-width: 380px;
+  flex-shrink: 1;
+}
+.seccion1 > img {
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 1;
+}
+.seccion2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.texto_s2 {
+  display: flex;
+  justify-content: center;
+  font-family: ubuntu-medium;
+}
+.iconos_s2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+  background-color: var(--color-terciario);
+  padding: 15px 20px;
+  border-radius: 60px;
+}
+.iconos_s2 > img {
+  width: 130px;
+  height: 50px;
+}
+.seccion3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-shrink: 1;
+  gap: 30px;
+  margin-top: 50px;
+}
+.texto_s3 {
+  display: flex;
+  justify-content: center;
+  font-family: ubuntu-medium;
+}
+.iconos_s3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 70px;
+  font-family: ubuntu;
+}
+.icono1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 1;
+  background-color: var(--color-terciario);
+  width: 25%;
+  height: 50%;
+  min-width: 273px;
+  min-height: 375px;
+  padding: 20px;
+  border-radius: 15px;
+  gap: 30px;
+  text-align: center;
+}
+.icono2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 1;
+  background-color: var(--color-terciario);
+  width: 25%;
+  height: 50%;
+  min-width: 273px;
+  min-height: 375px;
+  padding: 20px;
+  border-radius: 15px;
+  gap: 30px;
+  text-align: center;
+}
+.icono3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 1;
+  background-color: var(--color-terciario);
+  width: 25%;
+  height: 50%;
+  min-width: 273px;
+  min-height: 375px;
+  padding: 20px;
+  border-radius: 15px;
+  gap: 30px;
+  text-align: center;
+}
+.iconos_s3 > div > img {
+  width: 130px;
+}
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: start;
+  flex-wrap: wrap;
+  margin-top: 70px;
+  font-family: ubuntu-medium;
+  border-top: 5px;
+  border-color: gray;
+}
+.footer_list1,
+.footer_list2,
+.footer_list3 {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  gap: 15px;
+  color: black;
+}
+.footer_list1 > :first-child {
+  font-size: 20px;
+}
+.footer_list2 > :first-child {
+  font-size: 20px;
+}
+.footer_list3 > :first-child {
+  font-size: 20px;
+}
